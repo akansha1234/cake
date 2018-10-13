@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cake site</title>
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	.blinking{
+		color:  rgba(223, 39, 39, 0.7);
+	}
+#btn1,#btn2{
+	list-style-type: none;
+	text-decoration: none;
+
+}
+#btn1{
+	border:1px solid black;
+	border-radius: 20px;
+	padding:12px;
+}
+#btn2{
+	margin-left: 13px;
+	border:1px solid black;
+	border-radius: 20px;
+	padding:12px;
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+<div class="container">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarcollapse">
+<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarcollapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#">CAKE DELIVERY</a></li>
+<li><a href="#">HOW TO ORDER</a></li>
+<li><a href="#">CHECK MORE</a></li>
+<li><a href="#">SIGN UP</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+<div class="container">
+<h2>WELCOME TO <span id="blink">THAPA CAFE</span>.<BR>
+HOUSE OF CAKE LOVER OO YES.</h2>
+<br>
+<a href="#" id="btn1">CLICK TO ORDER</a>
+<a href="#" id="btn2">SHOW ME MORE</a>
+
+<script>
+var toggleHeader=document.getElementById('blink');
+	function toggle(){
+		toggleHeader.classList.toggle("blinking");
+	}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
