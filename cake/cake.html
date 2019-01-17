@@ -8,25 +8,54 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Volkhov" rel="stylesheet">
 <style>
-	.blinking{
-		color:  rgba(223, 39, 39, 0.7);
+body{
+	background-image: url(https://images.unsplash.com/photo-1532943134510-d2ec2a46b561?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49d78f2a4f293c60096e9b7dfd9995c0&auto=format&fit=crop&w=500&q=60);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	font-family: 'Playfair Display', serif;
+font-family: 'Volkhov', serif;
+}
+a{
+	color: white;
+}
+#yes:hover{
+	background-color: transparent;
+	color: white;
+	text-decoration-line-color: #b30086; 
+}
+#show{
+	animation-name: example;
+	animation-duration: 0.5s;
+	animation-iteration-count:infinite;
+}
+@keyframes example{
+	from{color: white;}
+	to{
+		color: #b30086;
 	}
+}
 #btn1,#btn2{
 	list-style-type: none;
 	text-decoration: none;
-
+	
 }
 #btn1{
-	border:1px solid black;
+	border:1px solid #b30086;
 	border-radius: 20px;
 	padding:12px;
+	color: #b30086;
 }
 #btn2{
 	margin-left: 13px;
-	border:1px solid black;
+	border:1px solid white;
 	border-radius: 20px;
 	padding:12px;
+	color:white;
+
+
 }
 </style>
 </head>
@@ -41,10 +70,10 @@
 </button>
 <div class="collapse navbar-collapse" id="navbarcollapse">
 <ul class="nav navbar-nav navbar-right">
-<li><a href="#">CAKE DELIVERY</a></li>
-<li><a href="#">HOW TO ORDER</a></li>
-<li><a href="#">CHECK MORE</a></li>
-<li><a href="#">SIGN UP</a></li>
+<li><a href="#" id="yes">CAKE DELIVERY</a></li>
+<li><a href="#" >HOW TO ORDER</a></li>
+<li><a href="#" >CHECK MORE</a></li>
+<li><a href="#" >SIGN UP</a></li>
 </ul>
 </div>
 </div>
@@ -52,18 +81,12 @@
 
 
 <div class="container">
-<h2>WELCOME TO <span id="blink">THAPA CAFE</span>.<BR>
+<h2>WELCOME TO <span id="show">THAPA CAFE</span>.<BR>
 HOUSE OF CAKE LOVER OO YES.</h2>
 <br>
 <a href="#" id="btn1">CLICK TO ORDER</a>
 <a href="#" id="btn2">SHOW ME MORE</a>
 
-<script>
-var toggleHeader=document.getElementById('blink');
-	function toggle(){
-		toggleHeader.classList.toggle("blinking");
-	}
-</script>
 
 
 
